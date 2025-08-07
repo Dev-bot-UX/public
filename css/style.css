@@ -1,0 +1,208 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Oxygen", sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+
+.container {
+    background-image: url(/public/image/bg.png);
+    background-size: cover;
+    color: white;
+    flex-grow: 1;
+}
+
+body {
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.container .header {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    cursor: pointer;
+    padding: 30px;
+    justify-content: space-around;
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+    position: relative;
+    z-index: 9999;
+
+}
+
+.container .header .logo {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.container .header .logo i {
+    font-size: 40px;
+}
+
+.container .header .logo h3 {
+    background-color: white;
+    color: black;
+    padding: 10px 10px;
+    border-radius: 15px;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+.container .header .logo h3:hover{
+    transition: 0.2s ease;
+    transform: translate3d(20px, 10px, 10px);
+    box-shadow: 0 0 10px black;
+}
+
+.container .header .menu ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+    list-style: none;
+}
+
+.container .header .menu .image{
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    background-color: white;
+    padding: 0 23px;
+    color: black;
+    z-index: 9999;
+}
+
+.container .header .menu ul li a {
+    color: black;
+    background-color: white;
+    padding: 0 5px 0;
+    border-radius: 20px;
+}
+[popover] {
+    border: 1px solid red;
+    padding: 10px;
+    align-items: center;
+    justify-content: end;
+}
+.container .header .menu ul .drop:hover > .dropdown{
+    display: inline-block;
+}
+.container .header .menu .dropdown dl li{
+    margin: 20px;
+    text-align: start;
+}
+.container .header .menu .dropdown{
+    position: absolute;
+    display: none;
+    padding: 20px;
+    right: 12%;
+    top: 70%;
+    border-radius: 20px;
+    backdrop-filter: blur(50px);
+    background-color: rgba(0, 0, 0, 0.881);
+    border: 1px solid rgba(255, 255, 255, 0.306);
+}
+.container .header .menu .dropdown button{
+    padding: 10px 20px;
+    border-radius: 15px;
+    border: none;
+    background-color: red;
+    color: white;
+    transition: 0.2s ease;
+}
+.container .header .menu .dropdown button:hover{
+    transition: 0.2s ease;
+    transform: scale(1.1);
+}
+
+.container .header .menu .sms{
+    position: absolute;
+    display: none;
+    padding: 20px;
+    right: 15%;
+    top: 50%;
+    border-radius: 20px;
+    background-color: none;
+}
+.container .header .menu .sms dl li:hover{
+    transition: 0.2s ease;
+    transform: scale(1.1);
+}
+.container .header .menu .sms dl li{
+    transition: 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: white;
+    color: black;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 20px;
+}
+.container .header .menu .sms dl li .icon{
+    font-size: 20pt;
+    animation: 2s icon ease infinite;
+    transition: 0.2s ease;
+}
+@keyframes icon {
+    0%{
+        transition: 0.2s ease;
+        transform: rotate(20deg) scale(1.1);
+    }
+    40%{
+        transform: rotate(0);
+        transition: 0.2s ease;
+    }
+    80%{
+        transform: rotate(-20deg);
+        transition: 0.2s ease;
+    }
+    100%{
+        transform: rotate(20deg);
+        transition: 0.2s ease;
+    }
+}
+.container .header .menu .sms-drop:hover > .sms{
+    display: inline-block;
+}
+.container .header .menu .bell{
+    position: absolute;
+    right: 25%;
+    top: 65%;
+    display: none;
+    background-color: white;
+    color: black;
+    padding: 15px;
+    border-radius: 20px;
+    width: 300px;
+}
+.container .header .menu .header-bell{
+    display: flex;
+    justify-content: space-between;
+}
+.container .header .menu .txt-bell{
+    left: 20px;
+    position: relative;
+}
+.container .header .menu .txt-bell i{
+    color: red;
+    animation: break 1s ease infinite;
+}
+@keyframes break {
+    0%{
+        transform: calc(0);
+    }
+    50%{
+        transform: scale(1.5);
+        color: black;
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+.container .header .menu .inbox:hover > .bell{
+    display: inline-block;
+}

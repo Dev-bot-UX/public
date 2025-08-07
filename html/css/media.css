@@ -1,0 +1,37 @@
+@media (max-width: 640px) {
+    .content {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .container .dashboard #menus {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+    }
+
+    .container .header {
+        display: flex;
+        gap: 20px;
+    }
+
+    .container .dashboard {
+        position: static;
+        top: auto;
+    }
+    .container .dashboard ul{
+        border: none;
+    }
+
+    .container .content .dashboard .logout .btn{
+        max-width: 640px;
+    }
+
+    .container .header .menu ul{
+        width: 300px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}

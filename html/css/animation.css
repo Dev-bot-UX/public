@@ -1,0 +1,89 @@
+body{
+    animation: 1s body ease;
+}
+@keyframes body {
+    0%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes dashboard {
+    0%{
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.content .dashboard{
+    animation: 0.5s dashboard ease-in-out;
+}
+@keyframes header {
+    0%{
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.container .header{
+    animation: 0.5s header ease-in-out;
+}
+@keyframes polyline {
+    0%{
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.chart polyline{ 
+    animation: 3s polyline ease;
+}
+@keyframes finance-flow {
+    0%{
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.finance-flow {
+    animation: 0.5s finance-flow ease;
+}
+@keyframes chart {
+    0%{
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.chart {
+    animation: 1s chart ease;
+}
+@keyframes header-content{
+    0%{
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.container .cotnent-container .header-content{
+    animation: 0.5s header-content ease;
+}
