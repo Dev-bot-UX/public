@@ -4,7 +4,7 @@
         flex-wrap: wrap;
     }
     .container .dashboard ul{
-        width: 470px;
+        width: 370px;
         display: flex;
         overflow-X: scroll;
         flex-direction: row;
@@ -105,4 +105,5 @@
         font-size: 6pt;
     }
 }
+
 
