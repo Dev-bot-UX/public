@@ -93,18 +93,15 @@
     .finance-flow .left-section p {
         font-size: 7pt;
     }
-    .contents .order-content table{
-        width: 100px;
-    }
-    .contents .order-content .table-order{
-        width: 300px;
-    }
-    .order-content .order-content{
-        width: 300px;
-        display: flex;
-        justify-content: center;
-    }
-    .order-content .order-content table tr, th{
-        font-size: 6pt;
-    }
+
+    .contents .order-content{
+    width: 300px;
+    margin: 10px 0;
+}
+.contents .order-content .table-order table{
+    width: 300px;
+}
+.contents .order-content .table-order tr, th{
+    font-size: 6pt;
+}
 }
