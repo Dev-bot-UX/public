@@ -77,13 +77,13 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 300px;
-        width: 370px;
+        height: 400px;
+        width: 470px;
     }
 
     .finance-flow .card {
-        height: 200px;
-        width: 400px;
+        height: 300px;
+        width: 500px;
     }
 
     .finance-flow .left-section h2 {
@@ -94,10 +94,10 @@
         font-size: 7pt;
     }
     .contents .order-content .table-order{
-        width: 300px;
+        width: 400px;
     }
     .order-content .order-content{
-        width: 300px;
+        width: 400px;
         display: flex;
         justify-content: center;
     }
@@ -105,5 +105,6 @@
         font-size: 6pt;
     }
 }
+
 
 
