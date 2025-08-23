@@ -104,6 +104,7 @@ body {
     backdrop-filter: blur(50px);
     background-color: rgba(0, 0, 0, 0.881);
     border: 1px solid rgba(255, 255, 255, 0.306);
+    animation: 0.2s logo ease;
 }
 .container .header .menu .dropdown button{
     padding: 10px 20px;
@@ -165,7 +166,19 @@ body {
         transition: 0.2s ease;
     }
 }
+ @keyframes logo {
+        0% {
+            transform: translateY(-100px);
+            opacity: 0;
+        }
+
+        100% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
 .container .header .menu .sms-drop:hover > .sms{
+    animation: 0.2s logo ease;
     display: inline-block;
 }
 .container .header .menu .bell{
@@ -205,4 +218,5 @@ body {
 }
 .container .header .menu .inbox:hover > .bell{
     display: inline-block;
+    animation: 0.2s logo ease;
 }
