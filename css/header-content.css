@@ -14,11 +14,14 @@
     flex-wrap: wrap;
 }
 .container .cotnent-container .header-content ul li {
+    width: 200px;
     list-style: none;
+    justify-content: space-between;
     border-radius: 20px;
     display: flex;
     flex-wrap: wrap;
-    gap: 50px;
+    gap: 5px;
+    font-size: 10pt;
     padding: 15px;
     backdrop-filter: blur(5px);
     align-items: center;
