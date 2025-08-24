@@ -1,107 +1,135 @@
-@media (max-width: 678px) {
+@media (max-width: 640px) {
+
+    /* General layout */
     .content {
         display: flex;
         flex-wrap: wrap;
     }
-    .container .dashboard ul{
-        width: 370px;
-        display: flex;
-        overflow-X: scroll;
-        flex-direction: row;
-        gap: 20px;
-        backdrop-filter: none;
-    }
-    .container .dashboard ul li{
-        display: flex;
-        width: 200px;
+
+    .container {
+
+        /* Dashboard adjustments */
+        .dashboard {
+            position: static;
+            top: auto;
+            z-index: 1;
+            text-align: center;
+            ul {
+                width: 100%;
+                max-width: 370px;
+                display: flex;
+                flex-direction: row;
+                overflow-x: auto;
+                gap: 20px;
+                border: none;
+                backdrop-filter: none;
+                -webkit-overflow-scrolling: touch;
+                scrollbar-width: thin;
+            }
+
+            ul li {
+                display: flex;
+                width: 200px;
+            }
+
+            /* Logout button */
+            .logout {
+                position: fixed;
+                bottom: 15px;
+
+                .btn {
+                    box-shadow: inset 0 2px 10px white;
+                    max-width: 640px;
+                }
+            }
+        }
+
+        /* Header styling */
+        .header {
+            display: flex;
+            gap: 20px;
+
+            .logo {
+                h3 {
+                    display: none;
+                    position: absolute;
+                    top: 90px;
+                    transition: all 0.3s ease;
+                }
+
+                &:hover>h3 {
+                    display: inline;
+                    animation: 0.5s logo3 ease;
+                }
+            }
+
+            .menu ul {
+                width: 100%;
+                max-width: 300px;
+                display: flex;
+                justify-content: space-around;
+            }
+        }
     }
 
-    .container .dashboard .logout {
-        position: fixed;
-        bottom: 15px;
-    }
-
-    .container .dashboard .logout .btn {
-        box-shadow: inset 0 2px 10px white;
-    }
-
-    .container .header {
-        display: flex;
-        gap: 20px;
-    }
-
-    .container .header .logo h3 {
-        display: none;
-        position: absolute;
-        top: 90px;
-    }
-
-    .container .header .logo:hover>h3 {
-        display: inline;
-        animation: 0.5s logo3 ease;
-    }
-
+    /* Animation */
     @keyframes logo3 {
         0% {
-            transform: translate(-100px);
+            transform: translateX(-100px);
             opacity: 0;
         }
 
         100% {
-            transform: translate(0);
+            transform: translateX(0);
             opacity: 1;
         }
     }
 
-    .container .dashboard {
-        position: static;
-        top: auto;
-        z-index: 1;
-    }
-
-    .container .dashboard ul {
-        border: none;
-    }
-
-    .container .content .dashboard .logout .btn {
-        max-width: 640px;
-    }
-
-    .container .header .menu ul {
-        width: 300px;
-        display: flex;
-        justify-content: space-around;
-    }
-
+    /* Finance section */
     .finance-flow {
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 400px;
-        width: 470px;
-    }
+        width: 100%;
+        max-width: 470px;
+        height: auto;
+        padding: 20px;
 
-    .finance-flow .card {
-        height: 300px;
-        width: 360px;
-    }
+        .card {
+            width: 100%;
+            max-width: 300px;
+            height: 300px;
+        }
 
-    .finance-flow .left-section h2 {
-        font-size: 10pt;
-    }
+        .left-section {
+            h2 {
+                font-size: 1rem;
+            }
 
-    .finance-flow .left-section p {
-        font-size: 7pt;
+            p {
+                font-size: 0.7rem;
+            }
+        }
     }
-
-    .contents .order-content{
-    width: 300px;
-    margin: 10px 0;
+    .cotnent-container .header-content ul{
+    display: flex;
 }
-.contents .order-content .table-order table{
-    width: 300px;
+.cotnent-container .header-content ul li{
+    flex: 1;
 }
-.contents .order-content .table-order tr, th{
-    font-size: 6pt;
+.contents .order-content {
+    width: 100%;
+    max-width: 370px;
+}
+
+.contents .order-content .table-order {
+    width: 100%;
+    max-width: 460px;
+    margin-right: 40px;
+}
+
+.contents .order-content .table-order tr,
+th {
+    font-size: 4.6pt;
 }
 }
