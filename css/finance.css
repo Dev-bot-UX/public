@@ -1,7 +1,7 @@
 .card {
     backdrop-filter: blur(5px);
     border-radius: 20px;
-    box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.521);
+    box-shadow: 0 1px 10px rgba(255, 255, 255, 0.521);
     padding: 30px;
     margin-top: 30px;
 }
@@ -82,3 +82,4 @@ line {
     stroke-width: 1;
 
 }
+
