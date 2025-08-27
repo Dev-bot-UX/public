@@ -41,8 +41,13 @@ body {
 
 .container .header .logo i {
     font-size: 40px;
+    transition: 0.2s ease;
 }
 
+.container .header .logo i:hover{
+    transition: 0.2s ease;
+    transform: scale(1.1);
+}
 .container .header .logo h3 {
     background-color: white;
     color: black;
@@ -220,3 +225,4 @@ body {
     display: inline-block;
     animation: 0.2s logo ease;
 }
+
